@@ -19,7 +19,7 @@ export default class HomeScreen extends Component{
     var url;
     //url = "https://rupinwhitehatjr.github.io/dictionary/searchKeyword.json"
     //url = "https://rupinwhitehatjr.github.io/dictionary/"+ +".json"
-    //url = "https://rupinwhitehatjr.github.io/dictionary/"+searchKeyword+".json"
+    url = "https://rupinwhitehatjr.github.io/dictionary/"+searchKeyword+".json"
     //url = "https://rupinwhitehatjr.github.io/dictionary/"+word+".json"
 
     return fetch(url)
@@ -115,7 +115,7 @@ export default class HomeScreen extends Component{
            }}
         /> 
       */}
-      {/*
+      {
           <TextInput
             style={styles.inputBox}
             onChangeText={text => {
@@ -130,7 +130,7 @@ export default class HomeScreen extends Component{
             }}
             value={this.state.text}
           />
-  ``````*/}
+  }
           <TouchableOpacity
             style={styles.searchButton}
             onPress={() => {
